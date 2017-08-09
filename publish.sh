@@ -3,7 +3,7 @@
 set -e
 
 git checkout master
-FOLDER=$TMPDIR$RANDOM
+FOLDER=$TMPDIR/$RANDOM
 VERSION=$(cat package.json | sed -n "s/ *\"version\": *\"\(.*\)\",/\1/p")
 
 echo
